@@ -1,0 +1,36 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: sans-serif;
+  background: #1a1a2e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+.app { text-align: center; max-width: 500px; width: 100%; }
+h1 { margin-bottom: 20px; color: #feca57; }
+.palette { display: flex; flex-wrap: wrap; gap: 5px; justify-content: center; margin-bottom: 20px; }
+.swatch { width: 30px; height: 30px; border: 2px solid transparent; cursor: pointer; border-radius: 4px; }
+.swatch.active { border-color: white; transform: scale(1.1); }
+.grid {
+  display: grid;
+  gap: 1px;
+  background: #333;
+  padding: 2px;
+  border-radius: 8px;
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 0 auto 20px;
+  user-select: none;
+}
+.cell { background: white; cursor: crosshair; }
+.controls button {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
